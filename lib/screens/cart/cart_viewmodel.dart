@@ -7,7 +7,6 @@ import 'package:Love.Clothes/services/cartclothes/cartclothes_service.dart';
 import '../../models/cartclothes.dart';
 import '../viewmodel.dart';
 
-
 class CartViewmodel extends Viewmodel {
   final _service = locator<CartClothesService>();
   List<CartClothes> _list;
@@ -19,16 +18,14 @@ class CartViewmodel extends Viewmodel {
   int get editIndex => _index;
   set editIndex(value) => _index = value;
 
-
   @override
   init() => update(() async {
         _list = await _service.fetchCartClothes();
         super.init();
       });
 
-
   void removeCartClothes(dynamic id) => update(() async {
-       _index = null;
+        _index = null;
         await _service.removeCartClothes(id);
         //_list.removeWhere((note) => note.id == id);
         _list.removeAt(id);
@@ -40,5 +37,4 @@ class CartViewmodel extends Viewmodel {
         if (index == -1) return null;
         _list[index] = data.copyWith(id: id);
       });
-
 }
