@@ -6,7 +6,6 @@ import 'package:Love.Clothes/services/loginbuyer/loginbuyer_service.dart';
 import '../../models/buyer.dart';
 import '../viewmodel.dart';
 
-
 class SignupBuyerViewmodel extends Viewmodel {
   final _service = locator<LoginBuyerService>();
   List<Buyer> _list;
@@ -18,13 +17,11 @@ class SignupBuyerViewmodel extends Viewmodel {
   int get editIndex => _index;
   set editIndex(value) => _index = value;
 
-
   @override
   init() => update(() async {
         _list = await _service.fetchBuyer();
         super.init();
       });
-
 
   void editBuyer(int index) => update(() async {
         _index = index;
