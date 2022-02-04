@@ -4,11 +4,13 @@ import 'package:Love.Clothes/screens/loginbuyer/loginbuyer_screen.dart';
 import 'package:Love.Clothes/screens/welcomeseller/welcomeseller.dart';
 
 Future navigateToLoginBuyerPage(context) async {
-  Navigator.push(context, MaterialPageRoute(builder: (context) => LoginBuyerScreen()));
+  Navigator.push(
+      context, MaterialPageRoute(builder: (context) => LoginBuyerScreen()));
 }
 
 Future navigateToWelcomeSellerPage(context) async {
-  Navigator.push(context, MaterialPageRoute(builder: (context) => WelcomeSellerPage()));
+  Navigator.push(
+      context, MaterialPageRoute(builder: (context) => WelcomeSellerPage()));
 }
 
 class WelcomePage extends StatelessWidget {
@@ -25,56 +27,50 @@ class WelcomePage extends StatelessWidget {
                 children: [
                   Container(
                     height: 150,
-                    child: Center(
-                    ),
+                    child: Center(),
                   ),
                   SizedBox(
                     height: 100,
                   ),
                   Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 70),                   
+                    padding: const EdgeInsets.symmetric(horizontal: 70),
                     child: Column(
                       children: [
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.end,
                           children: [
                             SizedBox(
-                            height: 50,
+                              height: 50,
                             ),
                             RaisedButton(
                               onPressed: () {
-                              navigateToWelcomeSellerPage(context);                          
+                                navigateToWelcomeSellerPage(context);
                               },
-                              
                               textColor: Colors.black,
                               color: Colors.orangeAccent,
                               shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(10)),
-                              child: Text('SELLER'),                              
-                             ),
-                             SizedBox(
-                             height: 20,
-                             ),
-                             RaisedButton(
+                                  borderRadius: BorderRadius.circular(10)),
+                              child: Text('SELLER'),
+                            ),
+                            SizedBox(
+                              height: 20,
+                            ),
+                            RaisedButton(
                               onPressed: () {
-                              navigateToLoginBuyerPage(context);  //Edit here                        
+                                navigateToLoginBuyerPage(context); //Edit here
                               },
                               textColor: Colors.black,
                               color: Colors.orangeAccent,
                               shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(10)),
-                              child: Text('BUYER'),                              
-                             ),                                                     
+                                  borderRadius: BorderRadius.circular(10)),
+                              child: Text('BUYER'),
+                            ),
                           ],
                         ),
                         Column(
                           children: [
                             Container(
-                              decoration: BoxDecoration(
-                                  border: Border(
-                                
-                              )),
-                              
+                              decoration: BoxDecoration(border: Border()),
                             ),
                             SizedBox(
                               height: 30,
