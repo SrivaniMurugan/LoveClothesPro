@@ -7,7 +7,6 @@ import 'package:Love.Clothes/services/purchased/purchased_service.dart';
 import '../../models/purchased.dart';
 import '../viewmodel.dart';
 
-
 class PurchasedViewmodel extends Viewmodel {
   final _service = locator<PurchasedService>();
   List<Purchased> _list;
@@ -19,13 +18,12 @@ class PurchasedViewmodel extends Viewmodel {
   int get editIndex => _index;
   set editIndex(value) => _index = value;
 
-
   @override
   init() => update(() async {
         _list = await _service.fetchPurchased();
         super.init();
       });
-// hanya display saja so hanya fetch 
+// hanya display saja so hanya fetch
 
   // void editClothes(int index) => update(() async {
   //       _index = index;
