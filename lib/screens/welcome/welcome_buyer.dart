@@ -3,13 +3,14 @@ import 'package:flutter/material.dart';
 import '../widgets/widgets.dart';
 import 'package:Love.Clothes/screens/loginbuyer/loginbuyer_screen.dart';
 
-
 Future navigateToLoginBuyerPage(context) async {
-  Navigator.push(context, MaterialPageRoute(builder: (context) => LoginBuyerScreen()));
+  Navigator.push(
+      context, MaterialPageRoute(builder: (context) => LoginBuyerScreen()));
 }
 
 Future navigateToSignUpBuyerPage(context) async {
-  Navigator.push(context, MaterialPageRoute(builder: (context) => SignupBuyerScreen()));
+  Navigator.push(
+      context, MaterialPageRoute(builder: (context) => SignupBuyerScreen()));
 }
 
 class WelcomeBuyerPage extends StatelessWidget {
@@ -26,56 +27,50 @@ class WelcomeBuyerPage extends StatelessWidget {
                 children: [
                   Container(
                     height: 150,
-                    child: Center(
-                    ),
+                    child: Center(),
                   ),
                   SizedBox(
                     height: 100,
                   ),
                   Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 70),                   
+                    padding: const EdgeInsets.symmetric(horizontal: 70),
                     child: Column(
                       children: [
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.end,
                           children: [
                             SizedBox(
-                            height: 50,
+                              height: 50,
                             ),
                             RaisedButton(
                               onPressed: () {
-                              navigateToLoginBuyerPage(context);                          
+                                navigateToLoginBuyerPage(context);
                               },
-                              
                               textColor: Colors.black,
                               color: Colors.orangeAccent,
                               shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(10)),
-                              child: Text('SIGN IN'),                              
-                             ),
-                             SizedBox(
-                             height: 20,
-                             ),
-                             RaisedButton(
+                                  borderRadius: BorderRadius.circular(10)),
+                              child: Text('SIGN IN'),
+                            ),
+                            SizedBox(
+                              height: 20,
+                            ),
+                            RaisedButton(
                               onPressed: () {
-                              navigateToSignUpBuyerPage(context);  //Edit here                        
+                                navigateToSignUpBuyerPage(context); //Edit here
                               },
                               textColor: Colors.black,
                               color: Colors.orangeAccent,
                               shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(10)),
-                              child: Text('SIGN UP'),                              
-                             ),                                                     
+                                  borderRadius: BorderRadius.circular(10)),
+                              child: Text('SIGN UP'),
+                            ),
                           ],
                         ),
                         Column(
                           children: [
                             Container(
-                              decoration: BoxDecoration(
-                                  border: Border(
-                                
-                              )),
-                              
+                              decoration: BoxDecoration(border: Border()),
                             ),
                             SizedBox(
                               height: 30,
