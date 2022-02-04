@@ -3,7 +3,6 @@ import '../../services/Shipping/shipping_service.dart';
 import '../../models/shipping.dart';
 import '../viewmodel.dart';
 
-
 class ShippingMainViewmodel extends Viewmodel {
   final _service = locator<ShippingService>();
   List<Shipping> _list;
@@ -15,7 +14,6 @@ class ShippingMainViewmodel extends Viewmodel {
   int get editIndex => _index;
   set editIndex(value) => _index = value;
 
-
   @override
   init() => update(() async {
         _list = await _service.fetchShipping();
@@ -24,7 +22,6 @@ class ShippingMainViewmodel extends Viewmodel {
 
   void editShipping(int index) => update(() async {
         _index = index;
-        
       });
 
   void addShipping(Shipping shipping) => update(() async {
@@ -34,7 +31,7 @@ class ShippingMainViewmodel extends Viewmodel {
       });
 
   void removeShipping(dynamic id) => update(() async {
-       _index = null;
+        _index = null;
         await _service.removeShipping(id);
         _list.removeAt(id);
       });
@@ -44,5 +41,4 @@ class ShippingMainViewmodel extends Viewmodel {
         if (index == -1) return null;
         _list[index] = data.copyWith(id: id);
       });
-
 }
