@@ -1,4 +1,3 @@
-
 import 'package:Love.Clothes/screens/firstpage/firstpage.dart';
 import 'package:flutter/material.dart';
 
@@ -15,6 +14,5 @@ void main() {
       primarySwatch: Colors.yellow,
     ),
     home: WelcomePage(),
-   
   ));
 }
