@@ -1,0 +1,49 @@
+{
+  "loginseller":[
+    {
+      "id": "1",
+      "name": "Defender",
+      "email": "defender@gmail.com",
+      "password": "11111"
+    }
+  ],
+
+  "profileseller":[
+    {
+      "id":1,
+      "name": "Defender",
+      "about": "We are selling lot of Cosplay Costume ORIGINAL from Japan ",
+      "phone": "0123456789"
+    }
+  ],
+
+  "shipping":[
+    {
+      "id": 1,
+      "tracking": "Tracking Number",
+      "courier": "assets/jnt.jpg"
+    },
+    {
+      "id": 2,
+      "tracking": "Tracking Number",
+      "courier": "assets/ninja.png"
+    },
+    {
+      "id": 3,
+      "tracking": "Tracking Number",
+      "courier": "assets/poslaju.jpg"
+    }
+  ],
+  
+  "addPro":[
+    {
+    "id": 1,
+    "image": "black_hoodie.webp",
+    "name": "",
+    "about": "",
+    "price": "RM"
+    }
+  ]
+
+
+}

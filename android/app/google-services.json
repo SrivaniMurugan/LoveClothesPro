@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "193666192363",
+    "project_id": "love-clothes",
+    "storage_bucket": "love-clothes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:193666192363:android:8056c05bc766e76a823fae",
+        "android_client_info": {
+          "package_name": "com.example.midterm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "193666192363-bjm37l7rf3ganqj0mbvd9rpm4lodnc9n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAP5aUGd7n9rBNbWUmzgQRnbKziuCDTFI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "193666192363-bjm37l7rf3ganqj0mbvd9rpm4lodnc9n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
