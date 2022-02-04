@@ -17,8 +17,7 @@ class AddProMainBody extends StatelessWidget {
               separatorBuilder: (context, index) => Divider(
                     color: Colors.transparent,
                   ),
-              itemBuilder: (_, index) => AddProEditorTile(index)
-              );
+              itemBuilder: (_, index) => AddProEditorTile(index));
         },
       ),
     );
