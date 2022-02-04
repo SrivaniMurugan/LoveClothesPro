@@ -6,18 +6,17 @@ import '../../services/profilebuyer/profilebuyer_service.dart';
 import '../../models/profilebuyer.dart';
 import '../viewmodel.dart';
 
-
 class ProfileBuyerMainViewmodel extends Viewmodel {
   final _service = locator<ProfileBuyerService>();
   List<ProfileBuyer> _list;
 
-  ProfileBuyer getProfileBuyer(int index) => _list == null ? null : _list[index];
+  ProfileBuyer getProfileBuyer(int index) =>
+      _list == null ? null : _list[index];
   int get dataCount => _list == null ? 0 : _list.length;
 
   int _index;
   int get editIndex => _index;
   set editIndex(value) => _index = value;
-
 
   @override
   init() => update(() async {
@@ -34,5 +33,4 @@ class ProfileBuyerMainViewmodel extends Viewmodel {
         if (index == -1) return null;
         _list[index] = data.copyWith(id: id);
       });
-
 }
