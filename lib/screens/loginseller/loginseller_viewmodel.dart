@@ -3,7 +3,6 @@ import '../../services/loginseller/loginseller_service.dart';
 import '../../models/loginseller.dart';
 import '../viewmodel.dart';
 
-
 class LogInSellerMainViewmodel extends Viewmodel {
   final _service = locator<LogInSellerService>();
   List<LogInSeller> _list;
@@ -14,7 +13,6 @@ class LogInSellerMainViewmodel extends Viewmodel {
   int _index;
   int get editIndex => _index;
   set editIndex(value) => _index = value;
-
 
   @override
   init() => update(() async {
@@ -30,5 +28,4 @@ class LogInSellerMainViewmodel extends Viewmodel {
         if (index == -1) return null;
         _list[index] = data.copyWith(id: id);
       });
-
 }
